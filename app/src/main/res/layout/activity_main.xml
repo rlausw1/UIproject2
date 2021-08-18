@@ -53,7 +53,7 @@
         android:text="추천인 입력" />
 
     <EditText
-        android:layout_width="match_parent"
+                android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:singleLine="true"
         android:imeOptions="actionSearch"
@@ -64,15 +64,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <RadioGroup
+
+
+        <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="남성" />
 
-        <RadioGroup
+        <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="여성" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="공개 안함" />
+
+
 
     </RadioGroup>
 
@@ -83,11 +92,34 @@
         android:checked="true"
         android:text="이용 약관에 동의합니다" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:Layout_weight="1"
 
-    <Button
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="가입 확인" />
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:Layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="이전으로" />
+
+        <Button
+            android:layout_width="0dp"
+            android:Layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="가입 확인" />
+
+
+    </LinearLayout>
+
+
+
 
 
 
